@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("GEO");
-    case mBTC: return QString("mGEO");
-    case uBTC: return QString::fromUtf8("μGEO");
+    case BTC: return QString("ALC");
+    case mBTC: return QString("mALC");
+    case uBTC: return QString::fromUtf8("μALC");
     default: return QString("???");
     }
 }
@@ -45,13 +45,13 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("FooCoin");
-    case mBTC: return QString("milliFooCoin (1 / 1,000)");
-    case uBTC: return QString("microFooCoin (1 / 1,000,000)");
+    case BTC: return QString("Alcohoin");
+    case mBTC: return QString("milliAlcohoin (1 / 1,000)");
+    case uBTC: return QString("microAlcohoin (1 / 1,000,000)");
     default: return QString("???");
     }
 }
-//a single unit (.00000001) of FooCoin is called a "wander."
+//a single unit (.00000001) of Alcohoin is called a "wander."
 qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
